@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ee0979, #ff6a00); /* Gradient Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Wrapper for Counter Application */
+div {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on wrapper */
+div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 28px;
+    color: #4A4A4A;
+    margin-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Counter Display */
+#count {
+    font-size: 72px;
+    color: #4CAF50; /* Vibrant Green */
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Button Styling */
+button {
+    background-color: #008CBA; /* Bright Blue */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 20px; /* Make the font larger */
+    font-weight: bold; /* Make the text bold */
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+#increment, #decrement, #reset {
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #005f73; /* Darker Blue */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Individual Button Color Changes */
+#increment {
+    background-color: #4CAF50; /* Green */
+}
+
+#increment:hover {
+    background-color: #388E3C;
+}
+
+#reset {
+    background-color: #F44336; /* Orange */
+}
+
+#reset:hover {
+    background-color: #FB8C00;
+}
+
+#decrement {
+    background-color: #FF9800; /* Red */
+}
+
+#decrement:hover {
+    background-color: #D32F2F;
+}
+
+/* Button Layout in Row */
+div button {
+    display: inline-block;
+    width: 120px;
+}
+
+/* Make it responsive */
+@media (max-width: 600px) {
+    div {
+        padding: 25px;
+    }
+
+    #count {
+        font-size: 48px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 20px;
+        width: 90px;
+    }
+
+    div button {
+        margin: 8px;
+    }
+}
