@@ -7,7 +7,10 @@ A simple and responsive counter app built with **HTML**, **CSS**, and **JavaScri
 - Fully responsive and modern UI.
 
 ## How to Use
-1. Clone the repository:
+1. Clone the folder:
    ```bash
-   git clone https://github.com/chin22maru/counter-app.git
+   git clone https://github.com/chin22maru/Web-Dev-Projects.git
+   cd Web-Dev-Projects
+   git sparse-checkout init --cone
+   git sparse-checkout set "Counter Application"
 2. Open index.html in your browser.
