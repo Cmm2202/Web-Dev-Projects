@@ -99,3 +99,44 @@ button {
     align-items: center;
     outline: none;
 }
+
+
+#task-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem {
+    display: flex;
+    background-color: var(--sec-bg);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task input {
+    height: 20px;
+    width: 20px;
+}
+
+.completed p {
+    text-decoration: line-through;
+    color : var(--teal);
+}
+
+.taskItem img {
+    width: 23px;
+    height: 23px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
