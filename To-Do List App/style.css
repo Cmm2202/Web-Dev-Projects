@@ -26,6 +26,10 @@ body {
     max-width: 500px;
 }
 
+h1 {
+    margin-bottom: 10px;
+}
+
 .stats-container {
     padding: 30px;
     border-radius: 20px;
@@ -139,4 +143,37 @@ button {
     height: 23px;
     margin: 0px 10px;
     cursor: pointer;
+}
+
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 20px 0 0;
+    justify-content: flex-end;
+}
+
+.action-btn {
+    background-color: var(--purple);
+    color: var(--text);
+    border: none;
+    padding: 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.action-btn:hover {
+    color: var(--bg);
+}
+
+#deleteAll, #resetAll {
+    width: 80px;
+    height: 40px;
+    font-weight: bolder;
+}
+
+#deleteAll {
+    background-color: rgb(225, 47, 47);
 }

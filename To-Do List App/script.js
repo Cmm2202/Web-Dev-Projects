@@ -141,3 +141,18 @@ const hurrah = () => {
     startVelocity: 45,
     });
 }
+
+
+document.getElementById("deleteAll").addEventListener("click", () => {
+    tasks = []; 
+    saveTasks(); 
+    updateTaskListUI(); 
+    updateStats(); 
+});
+
+document.getElementById("resetAll").addEventListener("click", () => {
+    tasks.forEach(task => (task.completed = false)); 
+    saveTasks(); 
+    updateTaskListUI(); 
+    updateStats(); 
+});
