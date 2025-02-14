@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ✅ Menu Button -->
+    <button id="menu-button">☰</button>
+
+    <!-- ✅ Sidebar -->
+    <div id="sidebar">
+        <h2>Game Rules</h2>
+        <p>Rock Paper Scissors is a simple hand game played between the user and the computer.</p>
+        <ul>
+            <li>✊ Rock beats ✌️ Scissors</li>
+            <li>✋ Paper beats ✊ Rock</li>
+            <li>✌️ Scissors beats ✋ Paper</li>
+            <li>Best of 3 rounds wins the game!</li>
+        </ul>
+        <button id="close-menu">Close</button>
+    </div>
+
+    <!-- ✅ Game Container -->
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <p>Choose your move:</p>
+
+        <div class="choices">
+            <button class="choice" data-choice="rock">✊</button>
+            <button class="choice" data-choice="paper">✋</button>
+            <button class="choice" data-choice="scissors">✌️</button>
+        </div>
+
+        <p id="round-result"></p>
+
+        <div class="scoreboard">
+            <p>Player Score: <span id="player-score">0</span></p>
+            <p>Computer Score: <span id="computer-score">0</span></p>
+        </div>
+
+        <button id="reset">Reset Game</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

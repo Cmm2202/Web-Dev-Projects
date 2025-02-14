@@ -1,0 +1,162 @@
+/* ✅ Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #000428, #004e92, #ff416c, #ff4b2b);
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ✅ Menu Button */
+#menu-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#menu-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* ✅ Sidebar */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 20px;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(-100%);
+    display: none;
+    border-right: 3px solid #2a5298; /* Add border for better visibility */
+}
+
+/* ✅ Show Sidebar */
+#sidebar.show {
+    transform: translateX(0);
+    display: block;
+}
+
+/* ✅ Sidebar Content */
+#sidebar h2 {
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding-bottom: 10px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 5px 0;
+}
+
+#close-menu {
+    display: block;
+    width: 100%;
+    background: #2a5298;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+#close-menu:hover {
+    background: #1e3c72;
+}
+
+/* ✅ New Game Button */
+#new-game {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff4081; /* Change to a new color */
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#new-game:hover {
+    background: #e6005c; /* Change to a new color */
+}
+
+/* ✅ Game Container */
+.game-container {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* ✅ Choices */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.choice {
+    font-size: 3rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ✅ Scoreboard */
+.scoreboard {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* ✅ Reset Button */
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#reset:hover {
+    background: #e6005c;
+}
